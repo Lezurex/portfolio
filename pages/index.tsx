@@ -1,9 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Navbar } from "../components/Navbar";
 import { getAllPosts } from "../lib/api";
 import Post from "../types/post";
-import portraitImg from "../public/img/portrait.jpg";
 import TypewriterComponent from "typewriter-effect";
 import { PostCard } from "../components/PostCard";
 import { GetStaticProps } from "next";
@@ -13,8 +10,7 @@ type Props = {
 };
 
 const Home = ({ allPosts }: Props) => {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
+  const morePosts = allPosts.slice(0, 5);
   return (
     <>
       <Head>
@@ -46,15 +42,23 @@ const Home = ({ allPosts }: Props) => {
             currently working at Migros-Genossenschafts-Bund.
           </p>
         </div>
-        <div
-          className="w-80 h-80 lg:w-96 lg:h-96 hover:scale-[1.03] transition ease-in-out duration-500 rounded-full ring-red-500 ring-4 bg-center bg-cover"
-          style={{ backgroundImage: "url('/img/portrait.webp')" }}
-        ></div>
+        <div className="w-1/2 h-1/2 lg:w-1/3 lg:h-1/3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="rounded-full w-full h-full hover:scale-105 transition ease-in-out duration-500 ring-red-500 ring-4"
+            src="/img/portrait.webp"
+            alt="Portrait"
+          />
+        </div>
       </section>
 
       <section className="bg-gray-300 text-gray-900 flex flex-col items-center p-5">
-        <h2 className="text-3xl">My Projects</h2>
-        <PostCard post={heroPost} />
+        <h2 className="text-3xl">Recent Posts</h2>
+        <div className="flex justify-center">
+          {morePosts.map((post) => (
+            <PostCard key={post.slug} post={post} />
+          ))}
+        </div>
       </section>
     </>
   );
