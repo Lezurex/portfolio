@@ -4,6 +4,10 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { isArray } from "util";
 import Image from "next/image";
 import Post from "../../types/post";
+import { unified } from "unified";
+import remarkParse from "remark-parse";
+import remarkHtml from "remark-html";
+import remarkGfm from "remark-gfm";
 
 type Props = {
   post: Post;
@@ -17,14 +21,17 @@ const PostPage = ({ post }: Props) => {
       </Head>
 
       <section className="flex justify-center items-center p-5 flex-col gap-5">
-        <h1 className="text-5xl font-bold">{post.title}</h1>
         <Image
           src={`/img/${post.coverImage}`}
           alt="cover"
-          width={720}
-          height={720}
+          width={500}
+          height={500}
         />
-        <p className="w-1/3">{post.content}</p>
+        <h1 className="text-5xl font-bold">{post.title}</h1>
+        <p
+          className="w-1/3"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        ></p>
       </section>
     </>
   );
@@ -46,7 +53,13 @@ export const getStaticProps: GetStaticProps = async (context) => {
     "content",
   ]);
 
-  console.log(post);
+  const content = await unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkHtml)
+    .process(post.content);
+
+  post.content = content.value.toString();
 
   return {
     props: { post },
