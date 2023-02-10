@@ -7,8 +7,8 @@ interface Props {
 
 export const NavLink = ({ href, children }: Props) => {
   return (
-    <Link href={href}>
-      <a className="text-xl hover:text-red-500 transition">{children}</a>
+    <Link href={href} className="text-xl hover:text-red-500 transition">
+      {children}
     </Link>
   );
 };
