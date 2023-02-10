@@ -27,10 +27,10 @@ const PostPage = ({ post }: Props) => {
           height={500}
         />
         <h1 className="text-5xl font-bold">{post.title}</h1>
-        <p
-          className="w-1/3"
+        <div
+          className="md:w-2/3 xl:w-1/3 prose prose-lg prose-invert"
           dangerouslySetInnerHTML={{ __html: post.content }}
-        ></p>
+        ></div>
       </section>
     </>
   );

@@ -23,14 +23,12 @@ const Home = ({ allPosts }: Props) => {
             <TypewriterComponent
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Hey, I'm Lenny!")
+                  .typeString("Lenny Angst")
                   .pauseFor(3000)
                   .deleteAll()
-                  .typeString("Software Engineer")
+                  .typeString("Lezurex")
                   .pauseFor(3000)
                   .deleteAll()
-                  .typeString("from Zurich")
-                  .pauseFor(3000)
                   .start();
               }}
               options={{ loop: true }}
