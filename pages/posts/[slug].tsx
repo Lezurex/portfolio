@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { isArray } from "util";
 import Image from "next/image";
 import Post from "../../types/post";
 import { unified } from "unified";
@@ -40,7 +39,7 @@ const PostPage = ({ post }: Props) => {
 export default PostPage;
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  if (context.params?.slug === undefined || isArray(context.params?.slug))
+  if (context.params?.slug === undefined || Array.isArray(context.params?.slug))
     throw new Error("");
   const slug: string = context.params?.slug;
   const post = getPostBySlug(slug, [
