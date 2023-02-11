@@ -49,6 +49,51 @@ const Home = ({ allPosts }: Props) => {
         />
       </section>
 
+      <section className="flex flex-col md:flex-row justify-center items-center md:items-start text-center md:text-left p-5 gap-10">
+        <h2 className="text-3xl">Technologies</h2>
+        <div className="lg:w-1/2 prose prose-invert">
+          <p>
+            During my apprenticeship, I had the opportunity to try out many
+            technologies in a professional environment.
+          </p>
+          <p>I could gain professional experience in these technologies:</p>
+          <ul className="flex flex-col items-center md:block">
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Git</li>
+            <li>Gitlab CI/CD</li>
+            <li>Docker</li>
+            <li>C#</li>
+            <li>.NET</li>
+          </ul>
+          <p>
+            During my apprenticeship, I also got to know the following
+            technologies in school, specific modules or my free time:
+          </p>
+          <ul className="flex flex-col items-center md:block">
+            <li>Java</li>
+            <li>PHP</li>
+            <li>Quarkus</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="flex flex-col md:flex-row-reverse justify-center items-center md:items-start text-center md:text-left p-5 gap-10">
+        <h2 className="text-3xl">About me</h2>
+        <div className="lg:w-1/2 prose prose-invert">
+          <p>
+            I am an 18-year-old developer from Zurich, Switzerland. I started
+            programming at the age of 13 with a programming book for Python
+            (although I never touched Python in the last few years).
+          </p>
+          <p>
+            Since 2020, I&apos;m an apprentice in software engineering at
+            Migros-Genossenschafts-Bund, a Swiss supermarket.
+          </p>
+        </div>
+      </section>
+
       <section className="bg-gray-300 text-gray-900 flex flex-col items-center p-5">
         <h2 className="text-3xl">Recent Posts</h2>
         <div className="flex justify-center">
