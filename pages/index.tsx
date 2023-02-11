@@ -4,6 +4,8 @@ import Post from "../types/post";
 import TypewriterComponent from "typewriter-effect";
 import { PostCard } from "../components/PostCard";
 import { GetStaticProps } from "next";
+import Image from "next/image";
+import portrait from "../public/img/portrait.webp";
 
 type Props = {
   allPosts: Post[];
@@ -17,9 +19,9 @@ const Home = ({ allPosts }: Props) => {
         <title>Lenny Angst</title>
       </Head>
 
-      <section className="flex justify-center items-center p-5 flex-col-reverse md:flex-row gap-5 md:gap-20">
+      <section className="flex justify-center items-center p-5 flex-col-reverse gap-10">
         <div>
-          <h1 className="text-4xl text-center md:text-left sm:text-5xl md:text-7xl font-bold lg:min-w-[14ch] lg:max-w-[14ch]">
+          <h1 className="text-4xl text-center sm:text-5xl md:text-7xl font-bold">
             <TypewriterComponent
               onInit={(typewriter) => {
                 typewriter
@@ -34,20 +36,17 @@ const Home = ({ allPosts }: Props) => {
               options={{ loop: true }}
             />
           </h1>
-          <p className="py-3 text-center md:text-left">
+          <p className="py-3 text-center">
             I am a software engineering apprentice from Zurich, Switzerland,
             <br />
             currently working at Migros-Genossenschafts-Bund.
           </p>
         </div>
-        <div className="w-1/2 h-1/2 lg:w-1/3 lg:h-1/3">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            className="rounded-full w-full h-full hover:scale-105 transition ease-in-out duration-500 ring-red-500 ring-4"
-            src="/img/portrait.webp"
-            alt="Portrait"
-          />
-        </div>
+        <Image
+          src={portrait}
+          alt="Portrait of me"
+          className="rounded-full w-1/2 md:w-1/3 lg:w-1/4 hover:scale-105 transition ease-in-out duration-500 ring-red-500 ring-4"
+        />
       </section>
 
       <section className="bg-gray-300 text-gray-900 flex flex-col items-center p-5">
