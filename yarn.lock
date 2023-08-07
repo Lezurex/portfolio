@@ -878,9 +878,9 @@ caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001464:
   integrity sha512-Vdhm5S11DaFVLlyiKu4hiUTkpZu+y1KA/rZZqVQfOD5YdDT/eQKlkt7NaE0WGOFgX32diqt9MiP9CAiFeRklaA==
 
 caniuse-lite@^1.0.30001517:
-  version "1.0.30001518"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001518.tgz#b3ca93904cb4699c01218246c4d77a71dbe97150"
-  integrity sha512-rup09/e3I0BKjncL+FesTayKtPrdwKhUufQFd3riFw1hHg8JmIFoInYfB102cFcY/pPgGmdyl/iy+jgiDi2vdA==
+  version "1.0.30001519"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001519.tgz#3e7b8b8a7077e78b0eb054d69e6edf5c7df35601"
+  integrity sha512-0QHgqR+Jv4bxHMp8kZ1Kn8CH55OikjKJ6JmKkZYP1F3D7w+lnFXF70nG5eNfsZS89jadi5Ywy5UCSKLAglIRkg==
 
 ccount@^2.0.0:
   version "2.0.1"
@@ -1149,9 +1149,9 @@ doctrine@^3.0.0:
     esutils "^2.0.2"
 
 electron-to-chromium@^1.4.477:
-  version "1.4.479"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.479.tgz#ec9f676f23d3a0b0e429bc454d25e0b3253d2118"
-  integrity sha512-ABv1nHMIR8I5n3O3Een0gr6i0mfM+YcTZqjHy3pAYaOjgFG+BMquuKrSyfYf5CbEkLr9uM05RA3pOk4udNB/aQ==
+  version "1.4.485"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.485.tgz#fde3ee9ee8112a3414c0dfa545385ad08ec43408"
+  integrity sha512-1ndQ5IBNEnFirPwvyud69GHL+31FkE09gH/CJ6m3KCbkx3i0EVOrjwz4UNxRmN9H8OVHbC6vMRZGN1yCvjSs9w==
 
 emoji-regex@^9.2.2:
   version "9.2.2"
@@ -2790,9 +2790,9 @@ micromatch@^4.0.4, micromatch@^4.0.5:
     picomatch "^2.3.1"
 
 million@^2.4.4:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/million/-/million-2.5.3.tgz#2fba97564ebe206f204ef431367d83c89071c24a"
-  integrity sha512-LknArVVOGfY4Jj2cfIAfw++BJAGeKLMMtBj/xdqTfNbm9CBJT6cT0HOdPr2n7/dYjKWIPtA4PwAR4Ee9XIA6Ew==
+  version "2.5.4"
+  resolved "https://registry.yarnpkg.com/million/-/million-2.5.4.tgz#08ae49c9e55002be662d3a9f69d8caf117279f34"
+  integrity sha512-6D4Vl2p2gcOe/gXWi2IaoMJ2bDnAbQFawMh/LP0FpfPIBl/9g9Pz2qtTOXPasI6JNFOVLKHunGO2gv9PaTJ5Og==
   dependencies:
     "@babel/core" "^7.21.0"
     "@babel/generator" "^7.22.7"
