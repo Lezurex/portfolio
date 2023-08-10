@@ -1141,9 +1141,9 @@ doctrine@^3.0.0:
     esutils "^2.0.2"
 
 electron-to-chromium@^1.4.477:
-  version "1.4.488"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.488.tgz#442b1855f8c84fb1ed79f518985c65db94f64cc9"
-  integrity sha512-Dv4sTjiW7t/UWGL+H8ZkgIjtUAVZDgb/PwGWvMsCT7jipzUV/u5skbLXPFKb6iV0tiddVi/bcS2/kUrczeWgIQ==
+  version "1.4.490"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.490.tgz#d99286f6e915667fa18ea4554def1aa60eb4d5f1"
+  integrity sha512-6s7NVJz+sATdYnIwhdshx/N/9O6rvMxmhVoDSDFdj6iA45gHR8EQje70+RYsF4GeB+k0IeNSBnP7yG9ZXJFr7A==
 
 emoji-regex@^9.2.2:
   version "9.2.2"
@@ -2782,9 +2782,9 @@ micromatch@^4.0.4, micromatch@^4.0.5:
     picomatch "^2.3.1"
 
 million@^2.4.4:
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/million/-/million-2.5.7.tgz#d56ef83aa08a7746bfcd5e2bbaebb15a5f5eb56d"
-  integrity sha512-u+HoYU/uAgZ6imE9qRuMTlL4FYW5GlZ8dO/UPYk+hWPGZkml+vF5bhtZ3HBz2f7LqiRkHhKmBMvXWrmQiyLHnA==
+  version "2.5.9"
+  resolved "https://registry.yarnpkg.com/million/-/million-2.5.9.tgz#5c4818bed640c3314776bd113d43f224d8e32ee1"
+  integrity sha512-Zam+LrcmMkh4v77JHnGms2q4mMw6CYza4LQJbLSpN23BVS37b3355WuiqK3hZm4H4yTqEg5Gl42uIBvVYbXgAg==
   dependencies:
     "@babel/core" "^7.21.0"
     "@babel/generator" "^7.22.7"
