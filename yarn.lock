@@ -3184,9 +3184,9 @@ react-is@^16.13.1:
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react-scroll-parallax@^3.3.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/react-scroll-parallax/-/react-scroll-parallax-3.4.2.tgz#4f987804581115f3fc50600341611ef5a7ea65d3"
-  integrity sha512-jNltdM1a6y2TRHW4X4nyNT9BAzbLoISTvXaoB9YKGudVcAsGWManMI6UZ6PMd2si6bbWtTROgF/A9IoplZ2OLA==
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/react-scroll-parallax/-/react-scroll-parallax-3.4.3.tgz#0710e292c0fe369f28e5bbdaa9a9cc50061e6185"
+  integrity sha512-64H5qw9UbhSP9ZD0bePorH0rML+O7Yyopa9lU9CE0+dd19zvK2B/FFFjKcY9Ozz0s047AEwWrBIOrKzpWW+i9w==
   dependencies:
     parallax-controller "^1.7.0"
 
